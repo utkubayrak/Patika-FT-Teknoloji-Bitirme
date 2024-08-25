@@ -1,0 +1,337 @@
+2024-08-25T11:29:38.460+03:00  INFO 2836 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Starting JetbusServiceApplication using Java 21.0.2 with PID 2836 (E:\patika-bitirme-projesi\jetbus-service\target\classes started by Utku Bayrak in E:\patika-bitirme-projesi\jetbus-service)
+2024-08-25T11:29:38.478+03:00  INFO 2836 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T11:29:38.552+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-25T11:29:38.553+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-25T11:29:39.797+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:29:39.799+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T11:29:39.985+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
+2024-08-25T11:29:40.011+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:29:40.013+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-25T11:29:40.034+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.AirportRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:29:40.035+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.CityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:29:40.035+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.FlightRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:29:40.035+03:00  INFO 2836 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-08-25T11:29:40.343+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=86533bb7-ffde-31e8-8a16-4ee1768d0eed
+2024-08-25T11:29:41.046+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-08-25T11:29:41.061+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T11:29:41.062+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-25T11:29:41.119+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T11:29:41.120+03:00  INFO 2836 --- [jetbus-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2566 ms
+2024-08-25T11:29:41.323+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T11:29:41.450+03:00  INFO 2836 --- [jetbus-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-25T11:29:41.496+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T11:29:41.867+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T11:29:41.904+03:00  INFO 2836 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T11:29:42.120+03:00  INFO 2836 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5238dda5
+2024-08-25T11:29:42.122+03:00  INFO 2836 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T11:29:42.189+03:00  WARN 2836 --- [jetbus-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-25T11:29:43.146+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T11:29:43.501+03:00  INFO 2836 --- [jetbus-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:29:44.117+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-25T11:29:44.899+03:00  WARN 2836 --- [jetbus-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T11:29:44.941+03:00  WARN 2836 --- [jetbus-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-25T11:29:46.219+03:00  INFO 2836 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-08-25T11:29:46.232+03:00  INFO 2836 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Started JetbusServiceApplication in 8.37 seconds (process running for 9.114)
+2024-08-25T11:29:47.620+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T11:29:47.620+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T11:29:47.622+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-25T11:29:58.599+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-3] c.u.j.service.impl.AdminCityServiceImpl  : Creating city with name: Ordu
+2024-08-25T11:29:58.690+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-3] c.u.j.service.impl.AdminCityServiceImpl  : City created successfully: City(id=1, cityName=Ordu, countryName=Türkiye)
+2024-08-25T11:30:11.764+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-4] c.u.j.service.impl.AdminCityServiceImpl  : Creating city with name: İstanbul
+2024-08-25T11:30:11.772+03:00  INFO 2836 --- [jetbus-service] [http-nio-8082-exec-4] c.u.j.service.impl.AdminCityServiceImpl  : City created successfully: City(id=2, cityName=İstanbul, countryName=Türkiye)
+2024-08-25T11:31:17.658+03:00  INFO 2836 --- [jetbus-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:31:17.662+03:00  INFO 2836 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T11:31:17.672+03:00  INFO 2836 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-25T11:33:07.812+03:00  INFO 3580 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Starting JetbusServiceApplication using Java 21.0.2 with PID 3580 (E:\patika-bitirme-projesi\jetbus-service\target\classes started by Utku Bayrak in E:\patika-bitirme-projesi\jetbus-service)
+2024-08-25T11:33:07.815+03:00  INFO 3580 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T11:33:07.888+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-25T11:33:07.888+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-25T11:33:09.152+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:33:09.154+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T11:33:09.310+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 3 JPA repository interfaces.
+2024-08-25T11:33:09.337+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:33:09.339+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-25T11:33:09.354+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.AirportRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:33:09.355+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.CityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:33:09.356+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.FlightRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:33:09.356+03:00  INFO 3580 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-08-25T11:33:09.700+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=86533bb7-ffde-31e8-8a16-4ee1768d0eed
+2024-08-25T11:33:10.434+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-08-25T11:33:10.453+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T11:33:10.453+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-25T11:33:10.521+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T11:33:10.521+03:00  INFO 3580 --- [jetbus-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2631 ms
+2024-08-25T11:33:10.765+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T11:33:10.865+03:00  INFO 3580 --- [jetbus-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-25T11:33:10.919+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T11:33:11.329+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T11:33:11.376+03:00  INFO 3580 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T11:33:11.588+03:00  INFO 3580 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7957ab5f
+2024-08-25T11:33:11.591+03:00  INFO 3580 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T11:33:11.655+03:00  WARN 3580 --- [jetbus-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-25T11:33:12.591+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T11:33:12.677+03:00  INFO 3580 --- [jetbus-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:33:13.088+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-25T11:33:13.752+03:00  WARN 3580 --- [jetbus-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T11:33:13.783+03:00  WARN 3580 --- [jetbus-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-25T11:33:15.229+03:00  INFO 3580 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-08-25T11:33:15.242+03:00  INFO 3580 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Started JetbusServiceApplication in 8.033 seconds (process running for 8.719)
+2024-08-25T11:35:06.075+03:00  INFO 3580 --- [jetbus-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:35:06.079+03:00  INFO 3580 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T11:35:06.087+03:00  INFO 3580 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-25T11:37:09.501+03:00  INFO 14772 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Starting JetbusServiceApplication using Java 21.0.2 with PID 14772 (E:\patika-bitirme-projesi\jetbus-service\target\classes started by Utku Bayrak in E:\patika-bitirme-projesi\jetbus-service)
+2024-08-25T11:37:09.505+03:00  INFO 14772 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T11:37:09.568+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-25T11:37:09.569+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-25T11:37:10.870+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:37:10.872+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T11:37:11.043+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 3 JPA repository interfaces.
+2024-08-25T11:37:11.065+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:37:11.066+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-25T11:37:11.082+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.AirportRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:37:11.083+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.CityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:37:11.083+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.FlightRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:37:11.084+03:00  INFO 14772 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-08-25T11:37:11.410+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=86533bb7-ffde-31e8-8a16-4ee1768d0eed
+2024-08-25T11:37:12.205+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-08-25T11:37:12.224+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T11:37:12.225+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-25T11:37:12.284+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T11:37:12.284+03:00  INFO 14772 --- [jetbus-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2715 ms
+2024-08-25T11:37:12.522+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T11:37:12.613+03:00  INFO 14772 --- [jetbus-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-25T11:37:12.661+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T11:37:13.103+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T11:37:13.149+03:00  INFO 14772 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T11:37:13.363+03:00  INFO 14772 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b851c56
+2024-08-25T11:37:13.365+03:00  INFO 14772 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T11:37:13.436+03:00  WARN 14772 --- [jetbus-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-25T11:37:14.274+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T11:37:14.356+03:00  INFO 14772 --- [jetbus-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:37:14.783+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-25T11:37:15.494+03:00  WARN 14772 --- [jetbus-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T11:37:15.532+03:00  WARN 14772 --- [jetbus-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-25T11:37:16.917+03:00  INFO 14772 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-08-25T11:37:16.932+03:00  INFO 14772 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Started JetbusServiceApplication in 8.168 seconds (process running for 8.862)
+2024-08-25T11:38:30.488+03:00  INFO 14772 --- [jetbus-service] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T11:38:30.489+03:00  INFO 14772 --- [jetbus-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T11:38:30.491+03:00  INFO 14772 --- [jetbus-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-25T11:38:30.746+03:00  INFO 14772 --- [jetbus-service] [http-nio-8082-exec-2] c.u.j.s.impl.AdminAirportServiceImpl     : Created airport: Airport(id=1, airportName=Ordu Havaalanı, city=City(id=1, cityName=Ordu, countryName=Türkiye))
+2024-08-25T11:39:44.911+03:00  INFO 14772 --- [jetbus-service] [http-nio-8082-exec-5] c.u.j.s.impl.AdminAirportServiceImpl     : Created airport: Airport(id=2, airportName=İstanbul Havaalanı, city=City(id=2, cityName=İstanbul, countryName=Türkiye))
+2024-08-25T11:46:46.042+03:00  INFO 14772 --- [jetbus-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:46:46.046+03:00  INFO 14772 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T11:46:46.054+03:00  INFO 14772 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-25T11:47:07.871+03:00  INFO 15888 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Starting JetbusServiceApplication using Java 21.0.2 with PID 15888 (E:\patika-bitirme-projesi\jetbus-service\target\classes started by Utku Bayrak in E:\patika-bitirme-projesi\jetbus-service)
+2024-08-25T11:47:07.875+03:00  INFO 15888 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T11:47:07.985+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-25T11:47:07.985+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-25T11:47:09.222+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:47:09.223+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T11:47:09.376+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 3 JPA repository interfaces.
+2024-08-25T11:47:09.399+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T11:47:09.401+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-25T11:47:09.417+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.AirportRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:47:09.418+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.CityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:47:09.418+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.FlightRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T11:47:09.418+03:00  INFO 15888 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-08-25T11:47:09.731+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=86533bb7-ffde-31e8-8a16-4ee1768d0eed
+2024-08-25T11:47:10.405+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-08-25T11:47:10.420+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T11:47:10.421+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-25T11:47:10.480+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T11:47:10.481+03:00  INFO 15888 --- [jetbus-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2495 ms
+2024-08-25T11:47:10.708+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T11:47:10.789+03:00  INFO 15888 --- [jetbus-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-25T11:47:10.828+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T11:47:11.182+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T11:47:11.214+03:00  INFO 15888 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T11:47:11.414+03:00  INFO 15888 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f1ee6fc
+2024-08-25T11:47:11.417+03:00  INFO 15888 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T11:47:11.469+03:00  WARN 15888 --- [jetbus-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-25T11:47:12.319+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T11:47:12.399+03:00  INFO 15888 --- [jetbus-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T11:47:12.852+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-25T11:47:13.491+03:00  WARN 15888 --- [jetbus-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T11:47:13.530+03:00  WARN 15888 --- [jetbus-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-25T11:47:14.915+03:00  INFO 15888 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-08-25T11:47:14.930+03:00  INFO 15888 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Started JetbusServiceApplication in 7.741 seconds (process running for 8.567)
+2024-08-25T11:48:54.510+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T11:48:54.510+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T11:48:54.512+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-25T11:49:01.244+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-6] c.u.j.s.impl.AdminAirportServiceImpl     : Retrieved airport: Airport(id=2, airportName=İstanbul Havaalanı, city=City(id=2, cityName=İstanbul, countryName=Türkiye))
+2024-08-25T11:49:01.249+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-6] c.u.j.s.impl.AdminAirportServiceImpl     : Retrieved airport: Airport(id=1, airportName=Ordu Havaalanı, city=City(id=1, cityName=Ordu, countryName=Türkiye))
+2024-08-25T11:49:01.311+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-6] c.u.j.s.impl.AdminFlightServiceImpl      : Created flight: Flight(id=1, flightNumber=TK1234, departureAirport=Airport(id=1, airportName=Ordu Havaalanı, city=City(id=1, cityName=Ordu, countryName=Türkiye)), arrivalAirport=Airport(id=2, airportName=İstanbul Havaalanı, city=City(id=2, cityName=İstanbul, countryName=Türkiye)), departureTime=2024-08-30T14:30, arrivalTime=2024-08-30T16:45, duration=PT2H15M, price=299.99, availableSeats=189)
+2024-08-25T11:52:08.228+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-3] c.u.j.service.impl.FlightServiceImpl     : Retrieved 1 flights
+2024-08-25T11:54:24.322+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-4] c.u.j.service.impl.FlightServiceImpl     : Found 1 flights matching the search criteria
+2024-08-25T12:02:04.899+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-5] c.u.j.service.impl.FlightServiceImpl     : Processing payment for flight ID: 1 with total price: 899.97 and ticket count: 3
+2024-08-25T12:02:05.614+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-5] c.u.j.service.impl.FlightServiceImpl     : Ticket purchase successful for flight ID: 1. Remaining seats: 186
+2024-08-25T12:05:19.577+03:00  INFO 15888 --- [jetbus-service] [http-nio-8082-exec-1] c.u.j.s.impl.AdminTicketServiceImpl      : Retrieved total income: 899.97
+2024-08-25T12:05:46.302+03:00  INFO 15888 --- [jetbus-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T12:05:46.347+03:00  INFO 15888 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T12:05:46.403+03:00  INFO 15888 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-25T12:05:52.840+03:00  INFO 20060 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Starting JetbusServiceApplication using Java 21.0.2 with PID 20060 (E:\patika-bitirme-projesi\jetbus-service\target\classes started by Utku Bayrak in E:\patika-bitirme-projesi\jetbus-service)
+2024-08-25T12:05:52.843+03:00  INFO 20060 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-25T12:05:52.938+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-25T12:05:52.938+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-25T12:05:54.497+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T12:05:54.499+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-25T12:05:54.679+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
+2024-08-25T12:05:54.703+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-08-25T12:05:54.704+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-08-25T12:05:54.723+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.AirportRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T12:05:54.723+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.CityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T12:05:54.768+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.utkubayrak.jetbusservice.repository.FlightRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-08-25T12:05:54.769+03:00  INFO 20060 --- [jetbus-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+2024-08-25T12:05:55.061+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=86533bb7-ffde-31e8-8a16-4ee1768d0eed
+2024-08-25T12:05:55.709+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-08-25T12:05:55.724+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-25T12:05:55.724+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-25T12:05:55.784+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-25T12:05:55.785+03:00  INFO 20060 --- [jetbus-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2846 ms
+2024-08-25T12:05:55.976+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-25T12:05:56.083+03:00  INFO 20060 --- [jetbus-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-25T12:05:56.132+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-25T12:05:56.466+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-25T12:05:56.500+03:00  INFO 20060 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-25T12:05:56.696+03:00  INFO 20060 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78b9abe3
+2024-08-25T12:05:56.698+03:00  INFO 20060 --- [jetbus-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-25T12:05:56.756+03:00  WARN 20060 --- [jetbus-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-25T12:05:57.652+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-25T12:05:57.740+03:00  INFO 20060 --- [jetbus-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T12:05:58.130+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-08-25T12:05:58.737+03:00  WARN 20060 --- [jetbus-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-25T12:05:58.766+03:00  WARN 20060 --- [jetbus-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-25T12:06:00.044+03:00  INFO 20060 --- [jetbus-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-08-25T12:06:00.056+03:00  INFO 20060 --- [jetbus-service] [restartedMain] c.u.j.JetbusServiceApplication           : Started JetbusServiceApplication in 8.054 seconds (process running for 8.908)
+2024-08-25T12:43:20.514+03:00  INFO 20060 --- [jetbus-service] [http-nio-8082-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T12:43:20.827+03:00  INFO 20060 --- [jetbus-service] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T12:43:20.872+03:00  INFO 20060 --- [jetbus-service] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 45 ms
+2024-08-25T12:43:21.366+03:00  INFO 20060 --- [jetbus-service] [http-nio-8082-exec-4] c.u.j.service.impl.AdminCityServiceImpl  : Creating city with name: İstanbul
+2024-08-25T12:43:21.568+03:00  WARN 20060 --- [jetbus-service] [http-nio-8082-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-08-25T12:43:21.569+03:00 ERROR 20060 --- [jetbus-service] [http-nio-8082-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'İstanbul' for key 'cities.UKrlmpoah07xxtfr03pmosd593p'
+2024-08-25T12:43:21.611+03:00 ERROR 20060 --- [jetbus-service] [http-nio-8082-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'İstanbul' for key 'cities.UKrlmpoah07xxtfr03pmosd593p'] [insert into cities (city_name,country_name) values (?,?)]; SQL [insert into cities (city_name,country_name) values (?,?)]; constraint [cities.UKrlmpoah07xxtfr03pmosd593p]] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'İstanbul' for key 'cities.UKrlmpoah07xxtfr03pmosd593p'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:391) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:305) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:224) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.11.jar:6.1.11]
+	at jdk.proxy4/jdk.proxy4.$Proxy131.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.11.jar:6.1.11]
+	at jdk.proxy4/jdk.proxy4.$Proxy131.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:629) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.11.jar:6.1.11]
+	at jdk.proxy4/jdk.proxy4.$Proxy136.save(Unknown Source) ~[na:na]
+	at com.utkubayrak.jetbusservice.service.impl.AdminCityServiceImpl.createCity(AdminCityServiceImpl.java:30) ~[classes/:na]
+	at com.utkubayrak.jetbusservice.controller.AdminCityController.createCity(AdminCityController.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-08-25T12:43:31.788+03:00  INFO 20060 --- [jetbus-service] [http-nio-8082-exec-2] c.u.j.service.impl.AdminCityServiceImpl  : Creating city with name: Samsun
+2024-08-25T12:43:31.889+03:00  INFO 20060 --- [jetbus-service] [http-nio-8082-exec-2] c.u.j.service.impl.AdminCityServiceImpl  : City created successfully: City(id=4, cityName=Samsun, countryName=Türkiye)
+2024-08-25T12:51:59.444+03:00  INFO 20060 --- [jetbus-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-25T12:51:59.514+03:00  INFO 20060 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-25T12:51:59.540+03:00  INFO 20060 --- [jetbus-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
